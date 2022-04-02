@@ -80,8 +80,6 @@ int main() {
     
 
     // Printando as sequências ótimas
-    outfile << endl << endl;
-    outfile << "====================================================================================" << endl << endl;
     outfile << "SCORE MÁXIMO:" << max << endl;
     outfile << "SEQUÊNCIA 1: " << subs1 << endl;
     outfile << "SEQUÊNCIA 2: " << subs2 << endl;
