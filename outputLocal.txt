@@ -10,5 +10,5 @@ TAMANHO SEQ 2: 40
 ====================================================================================
 
 SCORE MÁXIMO:6
-SEQUÊNCIA 1: -ACCAGCCT
-SEQUÊNCIA 2: -ACAA-GTT
+SEQUÊNCIA 1: -ACCAG
+SEQUÊNCIA 2: -ACAA-
