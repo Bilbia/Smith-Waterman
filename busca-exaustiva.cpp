@@ -54,14 +54,14 @@ int main() {
 
 
     // Gerando todas as substrings de A
-    for (int k = 1; k < m; k++){
+    for (int k = 1; k <= m; k++){
         for (int i = 0; i <= (m - k); i++){
             subs1.push_back(seq1.substr(i, k));
         }
     }
 
     // Gerando todas as substrings de B
-    for (int k = 1; k < n; k++){
+    for (int k = 1; k <= n; k++){
         for (int i = 0; i <= (n - k); i++){
             subs2.push_back(seq2.substr(i, k));
         }
