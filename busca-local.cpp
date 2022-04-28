@@ -45,17 +45,16 @@ int main() {
 
     outfile << "====================================================================================" << endl << endl;
 
-    int count = 0;
     int max = 0;
     string subs1;
     string subs2;
     // default_random_engine gen;
     random_device seed;
     uniform_int_distribution<int> distRound(10, 50);
-    uniform_int_distribution<int> distCount(10, 50);
+    uniform_int_distribution<int> distP(10, 50);
 
     int roundMax = distRound(seed);
-    int countMax = distCount(seed);
+    int p = distP(seed);
 
     for (int round = 0; round < roundMax; round++){
         uniform_int_distribution<int> distK(1, m);
@@ -64,7 +63,7 @@ int main() {
         int i = distI(seed);
         string sub1 = seq1.substr(i, k);
 
-        while (count < countMax){
+        for (int count = 0; count < p; count ++){
             uniform_int_distribution<int> distJ(0, n-k);
             int j = distJ(seed);
             string sub2 = seq2.substr(j, k);
@@ -74,17 +73,13 @@ int main() {
                 max = result;
                 subs1 = sub1;
                 subs2 = sub2;
-                count = 0;
             }
-            count ++;
         }
         
     }
     
 
     // Printando as sequências ótimas
-    outfile << endl << endl;
-    outfile << "====================================================================================" << endl << endl;
     outfile << "SCORE MÁXIMO:" << max << endl;
     outfile << "SEQUÊNCIA 1: " << subs1 << endl;
     outfile << "SEQUÊNCIA 2: " << subs2 << endl;
@@ -93,3 +88,6 @@ int main() {
     outfile.close();
     return 0;
 }
+
+// g++ -Wall -O3 busca-local.cpp -o local
+// ./local < dna.seq
