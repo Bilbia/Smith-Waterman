@@ -1,0 +1,12 @@
+SEQUÊNCIA 1: TTCTAGC-CA
+TAMANHO SEQ 1: 10
+SEQUÊNCIA 2: C-GCGATCGAGT-CCCCCCCG-CAAAGGCC-TCCA-G-AT
+TAMANHO SEQ 2: 40
+
+====================================================================================
+
+
+
+SCORE MÁXIMO:10
+SEQUÊNCIA 1: TCTAGC-C
+SEQUÊNCIA 2: TCGAGT-C
