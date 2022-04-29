@@ -1,10 +1,7 @@
-SEQUÊNCIA 1: --ACCAGCCT
-TAMANHO SEQ 1: 10
-SEQUÊNCIA 2: TTCCTCG-ACAA-GTTAAAAT-ATA-TTG-TTCT--CT-T
-TAMANHO SEQ 2: 40
+SEQUÊNCIA 1: 
+TAMANHO SEQ 1: 0
+SEQUÊNCIA 2: 
+TAMANHO SEQ 2: 0
 
 ====================================================================================
 
-SCORE MÁXIMO:6
-SEQUÊNCIA 1: -ACCAG
-SEQUÊNCIA 2: -ACAA-

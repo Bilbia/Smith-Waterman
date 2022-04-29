@@ -6,15 +6,6 @@
 
 using namespace std;
 
-int compare(char A, char B) {
-    if (A == B){
-        return 2;
-    }
-    else {
-        return -1;
-    }
-}
-
 int calcMax(string sub1, string sub2, int k) {
     int max = 0;
     for(int i=0; i<k; i++){
