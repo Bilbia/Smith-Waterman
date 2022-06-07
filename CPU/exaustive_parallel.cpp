@@ -30,7 +30,7 @@ int main() {
     cin >> m >> n >> seq1 >> seq2;
 
     ofstream outfile;
-    outfile.open("outputExaustiva.txt");
+    outfile.open("outputCPU.txt");
 
     outfile << "SEQUÊNCIA 1: " << seq1  << endl;
     outfile << "TAMANHO SEQ 1: " << m << endl;

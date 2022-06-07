@@ -21,16 +21,16 @@ struct calcMax{
     int operator()(const thrust::tuple<char, int, int>& a){
 
         if(c == thrust::get<0>(a)){
-            diagonal = thrust::get<1>(a) + 2;
+            diag = thrust::get<1>(a) + 2;
         }else{
-            diagonal = thrust::get<1>(a) - 1;
+            diag = thrust::get<1>(a) - 1;
         }
         cima = thrust::get<2>(a) - 1;
-        if ( diagonal > 0 && diagonal > cima ){
-            return diagonal;
-        }else if( cima > 0 && cima > diagonal){
+        if ( diag > 0 && diag > cima ){
+            return diag;
+        }else if( cima > 0 && cima > diag){
             return cima;
-        }else if(diagonal > 0 && diagonal == cima ){
+        }else if(diag > 0 && diag == cima ){
             return cima;
         }else{
             return 0;
@@ -64,7 +64,7 @@ int main(){
     seq1 = '_' + seq1;
     seq2 = '_' + seq2;
 
-    int max = -(m + n);
+    int max = 0;
     int temp, lenMax;
     int k = 1;
 
@@ -115,7 +115,7 @@ int main(){
         }
         k = (max / 2) + 1;
         lenMax --;
-        cout << "MAIOR SCORE: "<< max << endl;
+        cout << "MAIOR SCORE: "<< (max - 1) << endl;
    
     }
     return 0;
